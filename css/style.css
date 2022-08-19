@@ -1,0 +1,13 @@
+button { 
+    padding: 10px;
+    background: #b92929;
+    color: white;
+    font: bold 10px/5px verdana;
+    width: 70px;
+    cursor: pointer;
+    text-align: center;
+}
+.cancio1 {
+    color: #b92929;
+}
+
