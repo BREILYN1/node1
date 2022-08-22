@@ -1,20 +1,21 @@
 const express = require('express')
 const app = express(express)
 const path = require('path')
+const PORT = process.env.PORT || 5000;
+
 
 // settings
-app.set('port', 5000)
+
 
 // middlewares
 app.use(express.static(path.join(__dirname, 'public')))
-
 console.log(__dirname)
 
 // routes
-app.get('/', (req, res)=>{
+app.get('/', function(req, res) {
     res.send('Bienvenidos')
 })
 
-app.listen(app.get('port'), ()=>{
-    console.log(`Aplicacion corriendo en el puerto ${app.get('port')}`)
-})
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
+});
