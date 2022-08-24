@@ -13,7 +13,7 @@ console.log(__dirname)
 
 // routes
 app.get('/', function(req, res) {
-    res.send('Bienvenidos')
+    res.send ('Bienvenidos')
 })
 
 app.listen(PORT, () => {
